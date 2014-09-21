@@ -7,5 +7,5 @@
 command! -nargs=1 S call GitSend(<q-args>)
 function! GitSend(args)
   let args = a:args
-  execute '! source ~/.zshrc && send ' args
+  execute '! source ~/.zshrc && send "' args '"'
 endfunction
