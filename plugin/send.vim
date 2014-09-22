@@ -12,7 +12,16 @@ execute 'command! -nargs=1' g:GitSendPrefix 'call GitSend(<q-args>)'
 
 function! GitSend(args)
   let args = a:args
-  let command = 'source ~/.zshrc && send "' . args . '"'
-  let output = system(command)
-  echo output
+  let shell = 'echo $SHELL'
+  if shell =~ 'zsh'
+    execute echo "ZShell"
+    "let command = 'source ~/.zshrc && send "' . args . '"'
+  elseif shell =~ 'bash'
+    execute echo "Bash"
+    "let command = 'source ~/.zshrc && send "' . args . '"'
+  else
+    execute echo "ERROR This plugin only works with zshell or bash."
+  endif
+"  let output = system(command)
+"  echo output
 endfunction
