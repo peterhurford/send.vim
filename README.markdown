@@ -22,3 +22,9 @@ Once you've done that, you can install this plugin using [pathogen.vim](https://
 cd ~/.vim/bundle
 git clone https://github.com/peterhurford/send.vim
 ```
+
+
+## Change Defaults
+
+You can change "Send" to another command by adding `let g:GitSendPrefix = '<my command>'` to your .vimrc
+

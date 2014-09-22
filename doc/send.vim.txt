@@ -3,7 +3,7 @@
 Author: Peter Hurford
 License: Same terms as Vim itself (see |license|)
 
-Typing :S <commit message> in the vim ex command will automatically run the following commands in your shell:
+Typing :Send <commit message> in the vim ex command will automatically run the following commands in your shell:
 
 git add (everything in current git repository)
 git commit -m '<commit message>'
@@ -11,3 +11,9 @@ git pull origin (the current git branch)
 git push origin (the current git branch)
 
 Relies on send.zsh by Robert Krzyzanowski <https://github.com/robertzk/send.zsh>
+
+You can change "Send" to another command by adding
+
+let g:GitSendPrefix = '<my command>'
+
+to your .vimrc
