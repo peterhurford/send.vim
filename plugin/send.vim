@@ -11,6 +11,7 @@ endif
 execute 'command! -nargs=1' g:GitSendPrefix 'call GitSend(<q-args>)'
 
 function! GitSend(args)
+  echo "Working..."
   let args = a:args
 
   let shell = system('echo $SHELL')
