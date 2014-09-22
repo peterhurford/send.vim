@@ -14,13 +14,13 @@ function! GitSend(args)
   let args = a:args
   let shell = 'echo $SHELL'
   if shell =~ 'zsh'
-    execute echo "ZShell"
+    echo "ZShell"
     "let command = 'source ~/.zshrc && send "' . args . '"'
   elseif shell =~ 'bash'
-    execute echo "Bash"
+    echo "Bash"
     "let command = 'source ~/.zshrc && send "' . args . '"'
   else
-    execute echo "ERROR This plugin only works with zshell or bash."
+    echo "ERROR This plugin only works with zshell or bash."
   endif
 "  let output = system(command)
 "  echo output
