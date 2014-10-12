@@ -13,5 +13,4 @@ function! GitSend(args)
   let args = a:args
   let command = '! git add "$(git rev-parse --show-toplevel)"; git commit -m "' . args . '"; git push -q origin `git rev-parse --abbrev-ref HEAD` &'
   let output = system(command)
-  echo output
 endfunction
