@@ -3,7 +3,6 @@
 " Version: 1.0
 " Reverse engineered from the git-vim plugin <http://github.com/motemen/git-vim/>
 
-
 if !exists('g:GitSendPrefix')
   let g:GitSendPrefix = 'Send'
 endif
