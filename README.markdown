@@ -1,7 +1,7 @@
 ## send.vim
 **send.vim** Git add, git commit, git pull, git push all in one command, without leaving vim.
 
-Typing `:S <commit message>` in the vim ex command will automatically run the following commands in your shell:
+Typing `:Send <commit message>` in the vim ex command will automatically run the following commands in your shell:
 
 ```
 git add (everything in current git repository)
@@ -10,7 +10,7 @@ git pull origin (the current git branch)
 git push origin (the current git branch)
 ```
 
-You can also type just `:S` to commit without writing a commit message.
+You can also type just `:Send` to commit without writing a commit message.
 
 ## Installation
 
@@ -26,5 +26,4 @@ git clone https://github.com/peterhurford/send.vim
 
 ## Change Defaults
 
-You can change "Send" to another command by adding `let g:GitSendPrefix = '<my command>'` to your .vimrc
-
+You can change `:Send` to another command by adding `let g:GitSendPrefix = '<my command>'` to your .vimrc.  I like `:S` (`let g:GitSendPrefix = 'S'`).
