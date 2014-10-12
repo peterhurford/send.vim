@@ -25,3 +25,5 @@ git clone https://github.com/peterhurford/send.vim
 ## Change Defaults
 
 You can change `:Send` to another command by adding `let g:GitSendPrefix = '<my command>'` to your .vimrc.  I like `:S` (`let g:GitSendPrefix = 'S'`).
+
+You also can supress the output given by send with `let g:GitSendSupressOutput = 1` in your .vimrc.
