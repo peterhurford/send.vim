@@ -1,6 +1,8 @@
 " send.vim
 " Author: Peter Hurford
 " Version: 1.0
+" Will let you make git commits from within vim. Doesn't let you push to
+" master.
 " Reverse engineered from the git-vim plugin <http://github.com/motemen/git-vim/>
 
 if !exists("g:GitSendPrefix")
