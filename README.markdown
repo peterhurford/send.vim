@@ -1,4 +1,3 @@
-## send.vim
 **send.vim** Git add, git commit, git pull, git push all in one command, without leaving vim.
 
 Typing `:Send <commit message>` in the vim ex command will automatically run the following commands in your shell:
